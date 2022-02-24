@@ -108,6 +108,7 @@ include_once "header.php";
             </div>
         </div>
     </section>
+    <!--comment section-->
     <section class="comments">
         <h1>What our users think</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sunt!</p>
@@ -115,7 +116,7 @@ include_once "header.php";
             <div class="comments-col">
                 <img src="/images/leart.png" alt="">
                 <div class="comments-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit ratione maiore?</p>
+                    <p name='message'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit ratione maiore?</p>
                     <h4>Leart Bytyqi</h4>
                 </div>
             </div>
@@ -128,6 +129,18 @@ include_once "header.php";
             </div>
         </div>
     </section>
+    <!--section class="commentbox">
+    <?php
+     echo "<form>
+            <input type='hidden' name='usersID' value='Anonymous'>
+            <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+            <textarea name='message'></textarea><br>
+            <button name='submit' type='submit'>Comment</button>
+        </form>";
+    ?>
+    </section-->
+    
+    
 
     <!--footer-->
     <?php
