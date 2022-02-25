@@ -42,7 +42,13 @@
                     <li><a href="#">PROFILE</a></li>
                     <li><a href="logout.inc.php">LOG OUT</a></li>
                     <?php
+                     if($_SESSION["usersUid"]="Admin"){
+                         /*header("location dashboard.php"); */
+
+                    ?>
+                    <?php
                     }
+                }
                     else{
                     ?>
                     <li><a href="login.php">LOG IN<a></li>

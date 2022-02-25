@@ -821,3 +821,89 @@ small {
     color: #555;
     font-weight: normal;
 }
+/*-----------------------------Dashboard--------------------------------------*/
+.main-wrapper{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+    font-size: 19px;
+}
+.mini-header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--green);
+    padding: 10px 650px;
+    font-size: larger;
+}
+.boxes i{
+    font-size: large;
+}
+.boxes a{
+    text-decoration: none;
+    color: black;
+}
+.boxes{
+    margin-top: 2%;
+}
+
+.info-box{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin: 0 50px;
+    width: 200px;
+    height: 200px;
+    padding: 58px;
+    text-align: center;
+    color: var(--darkblue);
+    background-color: var(--lightblue);
+}
+.info-box:hover{
+    color: darkblue;
+}
+.tabels{
+    margin-top: 10%;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+.tabels h3{
+    padding-bottom: 5px;
+    font-size: larger;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+  
+  .table  td, .table  th {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  .table-project td, .table-project th{
+    border: 1px solid #ddd;
+    padding: 10px 26px;
+
+  }
+  .table  tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .table  tr:hover {background-color: #ddd;}
+  
+  .table  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--green);
+    color: black;
+  }
+

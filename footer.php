@@ -37,6 +37,7 @@
                 <p>+38344444444</p>
                 <p>freelancer@gmail.com</p>
             </div>
+            <a href="dashboard.php"><button >Press</button></a>
         </div>
     </section>
     <script src="/script/script.js"></script>
