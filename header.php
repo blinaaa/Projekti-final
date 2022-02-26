@@ -1,7 +1,7 @@
 <?php
     session_start();
 ?>
-<?php
+<?php   
     date_default_timezone_set('Europe/Tirane');
 ?>
 
@@ -37,24 +37,13 @@
                     </li>
                     <?php
                     if(isset($_SESSION["usersID"])){
-                     ?>
-                    
-                    <li><a href="#">PROFILE</a></li>
-                    <li><a href="logout.inc.php">LOG OUT</a></li>
-                    <?php
-                     if($_SESSION["usersUid"]="Admin"){
-                         /*header("location dashboard.php"); */
-
-                    ?>
-                    <?php
+                    echo "<li><a href='profile.php'>PROFILE</a></li>";
+                    echo "<li><a href='logout.inc.php'>LOG OUT</a></li>";
                     }
-                }
                     else{
-                    ?>
-                    <li><a href="login.php">LOG IN<a></li>
-                    <li><a href="joinus.php">JOIN US<a></li>
-                    <?php
-                        }
+                    echo "<li><a href='login.php'>LOG IN<a></li>";
+                    echo "<li><a href='joinus.php'>JOIN US<a></li>";
+                    }
                     ?>
                 </ul>
             </div>

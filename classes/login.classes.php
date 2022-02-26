@@ -47,14 +47,19 @@ class Login extends Dbh{
             $user=$stmt->fetchAll(PDO::FETCH_ASSOC);
             session_start();
             $_SESSION["usersID"]=$user[0]["usersID"];
-            $_SESSION["usersUid"]=$user[0]["uesersUid"];
+            $_SESSION["usersUid"]=$user[0]["usersUid"];
 
             $stmt=null;
+    
+            function isAdmin(){
+                if (isset($_SESSION['usersID']) && $_SESSION['usersID']['usersUid'] == 'admin' ) {
+                    return true;
+                }else{
+                    return false;
+                }
+            }
             
         }
-
-
-       
 
     }
 

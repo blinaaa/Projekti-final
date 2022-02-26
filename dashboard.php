@@ -34,27 +34,8 @@
                             <a href="gd.php">create project</a>
                         </div>
                     </li>
-                    <?php
-                    if(isset($_SESSION["usersID"])){
-                     ?>
-                    
                     <li><a href="dashboard.php">dashboard</a></li>
                     <li><a href="logout.inc.php">LOG OUT</a></li>
-                    <?php
-                     if($_SESSION["usersUid"]="Admin"){
-                         /*header("location dashboard.php"); */
-
-                    ?>
-                    <?php
-                    }
-                }
-                    else{
-                    ?>
-                    <li><a href="login.php">LOG IN<a></li>
-                    <li><a href="joinus.php">JOIN US<a></li>
-                    <?php
-                        }
-                    ?>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>

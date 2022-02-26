@@ -8,7 +8,7 @@ include_once "header.php";
 
  <!--Log In box-->
  <section class="login">
-     <form action="include/login.inc.php" class="login-form" method="post">
+     <form action="include/login-admin.inc.php" class="login-form" method="post">
         <h1>Log In</h1>
         <div class="input">
             <span>Username</span>
@@ -24,8 +24,8 @@ include_once "header.php";
       <div class="input">
           <input type="submit" name="submitL">
       </div>
-          <div class="input"><label>Don't have an account?<a href="joinus.php">Sign up</a></label> </div>
-          <div class="input"><label><a href="login-admin.php">I'm an administrator</a></label> </div>
+          <div class="input"><label>Don't have an account?<a href="joinus-admin.php">Sign up</a></label> </div>
+          <div class="input"><label><a href="login.php">I'm a user</a></label> </div>
           
      </form>
      <?php
