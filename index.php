@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.php";
+include_once "must/header.php";
 
 ?>
 
@@ -10,28 +10,28 @@ include_once "header.php";
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis expedita dolore vel porro laborum <br>
             aut sequi doloremquelibero, eum excepturi?</p>
         <a href="joinus.php"><button class="btn joinus-btn">Join Us Now</button></a>
-        <a href="company.php"><button class="btn hire-btn">Hire a Freelancer</button></a>
+        <a href="freelancers.php"><button class="btn hire-btn">Hire a Freelancer</button></a>
     </section>
 
     <!--------SlideShow---------------->
     <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <a href="services/web.php"><img src="images/web.jpg" style="width:100%"></a>
+            <a href="freelancers.php"><img src="images/web.jpg" style="width:100%"></a>
             <div class="text">Web Developers</div>
         </div>
 
         <div class="mySlides fade">
-            <a href="services/mob.php"><img src="images/mobile.jpeg" style="width:100%"></a>
+            <a href="freelancers.php"><img src="images/mobile.jpeg" style="width:100%"></a>
             <div class="text">Mobile Developers</div>
         </div>
 
         <div class="mySlides fade">
-            <a href="services/app.php"><img src="images/appdev.jpg" style="width:100%"></a>
+            <a href="freelancers.php"><img src="images/appdev.jpg" style="width:100%"></a>
             <div class="text">Windows App Developers</div>
         </div>
         <div class="mySlides fade">
-            <a href="services/gd.php"><img src="images/GD.jpg" style="width:100%"></a>
+            <a href="freelancers.php"><img src="images/GD.jpg" style="width:100%"></a>
             <div class="text">Graphic Developer</div>
         </div>
         <!-- Next and previous buttons -->
@@ -81,26 +81,26 @@ include_once "header.php";
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, tempore.</p>
         <div class="work">
             <div class="work-col">
-                <img src="/images/companylogo1.jpg" alt="">
+                <img src="images/companylogo1.jpg" alt="">
                 <h3>Robert Half International</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum.</p>
             </div>
             <div class="work-col">
-                <img src="/images/companylogo2.jpg" alt="">
+                <img src="images/companylogo2.jpg" alt="">
                 <a href="#">
                     <h3>Microsoft</h3>
                 </a>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quasi?</p>
             </div>
             <div class="work-col">
-                <img src="/images/companylogo3.jpg" alt="">
+                <img src="images/companylogo3.jpg" alt="">
                 <a href="#">
                     <h3>Amazon</h3>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, et.</p>
             </div>
             <div class="work-col">
-                <img src="/images/google.png" alt="">
+                <img src="images/google.png" alt="">
                 <a href="#">
                     <h3>Google</h3>
                 </a>
@@ -114,14 +114,14 @@ include_once "header.php";
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sunt!</p>
         <div class="row">
             <div class="comments-col">
-                <img src="/images/leart.png" alt="">
+                <img src="images/leart.png" alt="">
                 <div class="comments-text">
                     <p name='message'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit ratione maiore?</p>
                     <h4>Leart Bytyqi</h4>
                 </div>
             </div>
             <div class="comments-col">
-                <img src="/images/blina.png" alt="">
+                <img src="images/blina.png" alt="">
                 <div class="comments-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est libero inventore iusto.</p>
                     <h4>Blina Avdullahu</h4>
@@ -144,5 +144,5 @@ include_once "header.php";
 
     <!--footer-->
     <?php
-    include_once "footer.php"; 
+      include_once "must/footer.php"; 
     ?>

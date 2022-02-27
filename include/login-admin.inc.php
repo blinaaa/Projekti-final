@@ -5,7 +5,7 @@ if(isset($_POST["submitL"])){
     $username=$_POST["username"];
     $password=$_POST["password"];
 
-    include "../classes/dbh-admin.classes.php";
+    include "../classes/dbh.classes.php";
     include "../classes/login-admin.classes.php";
     include "../classes/login-contr-admin.classes.php";
 

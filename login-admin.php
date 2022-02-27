@@ -1,5 +1,5 @@
 <?php
-include_once "header.php";
+include_once "must/header.php";
 ?>
 <section class="post-header post-header-login">
         <h1>Welcome Back</h1>
@@ -24,7 +24,6 @@ include_once "header.php";
       <div class="input">
           <input type="submit" name="submitL">
       </div>
-          <div class="input"><label>Don't have an account?<a href="joinus-admin.php">Sign up</a></label> </div>
           <div class="input"><label><a href="login.php">I'm a user</a></label> </div>
           
      </form>
@@ -47,5 +46,5 @@ include_once "header.php";
  </section>
 <!--footer-->
 <?php
-    include_once "footer.php"; 
+      include_once "must/footer.php"; 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.php";
+include_once "must/header.php";
 
 ?>
 <section class="post-header post-header-signup1">
@@ -65,5 +65,5 @@ include_once "header.php";
 
 <!--footer-->
 <?php
-    include_once "footer.php"; 
+      include_once "must/footer.php"; 
 ?>

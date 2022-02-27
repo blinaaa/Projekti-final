@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.php";
+include_once "must/header.php";
 
 ?>
 
@@ -22,14 +22,9 @@ include_once "header.php";
             <img src="images/hire.png" alt="" width="350px">
             <a href="company.php"><h3>I want to hire <i class="fas fa-arrow-right"></i></h3></a>
         </div>
-        <div class="account-col">
-            <img src="images/hire.png" alt="" width="350px">
-            <a href="joinus-admin.php"><h3>I am an administrator <i class="fas fa-arrow-right"></i></h3></a>
-        </div>
     </div>
 </section>
 
 <?php
-    
-    include_once "footer.php"; 
+      include_once "must/footer.php"; 
     ?>

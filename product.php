@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.php";
+include_once "must/header.php";
 
 ?>
     <div class="product">
@@ -23,13 +23,13 @@ include_once "header.php";
         <h1>Other Freelancers</h1>
         <div class="work">
             <div class="work-col">
-                <img src="/images/leart.png" alt="" height="150px">
+                <img src="images/leart.png" alt="" height="150px">
                 <h3>Leart Bytyqi</h3>
                 <h3 class="price">180.00$</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum.</p>
             </div>
             <div class="work-col">
-                <img src="/images/blina.png" alt="" height="150px">
+                <img src="images/blina.png" alt="" height="150px">
                 <a href="#">
                     <h3>Blina Avdullahu</h3>
                     <h3 class="price">180.00$</h3>
@@ -37,7 +37,7 @@ include_once "header.php";
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quasi?</p>
             </div>
             <div class="work-col">
-                <img src="/images/arber.png" alt="" height="150px">
+                <img src="images/arber.png" alt="" height="150px">
                 <a href="#">
                     <h3>Arber Manaj</h3>
                     <h3 class="price">180.00$</h3>
@@ -45,7 +45,7 @@ include_once "header.php";
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, et.</p>
             </div>
             <div class="work-col">
-                <img src="/images/ardit.png" alt="" height="150px">
+                <img src="images/ardit.png" alt="" height="150px">
                 <a href="#">
                     <h3>Ardit Berisha</h3>
                     <h3 class="price">180.00$</h3>
@@ -57,5 +57,5 @@ include_once "header.php";
       <!--footer-->
       <?php
     
-    include_once "footer.php"; 
+    include_once "must/footer.php"; 
     ?>

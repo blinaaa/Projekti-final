@@ -1,6 +1,6 @@
 <?php
 
-include_once "header.php";
+include_once "must/header.php";
 
 ?>
     <section class="post-header">
@@ -12,7 +12,7 @@ include_once "header.php";
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, repellat?</p>
         <div class="content">
             <figure id="fig1">
-                <img src="/images/blina.png" alt="" width="150px">
+                <img src="images/blina.png" alt="" width="150px">
                 <ul>
                   <li><h3>Blina Avdullahu</h3></li>
                   <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure inventore molestias <br> aliquid eum maiores velit nam eaque ex officiis eos, a veritatis debitis et quibusdam porro ab? Odio, molestias quas.50</p></li>
@@ -33,5 +33,5 @@ include_once "header.php";
 <!--footer-->
 <?php
     
-    include_once "footer.php"; 
+    include_once "must/footer.php"; 
     ?>

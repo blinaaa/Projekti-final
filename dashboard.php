@@ -1,67 +1,24 @@
+
 <?php
-    session_start();
+      include_once "must/adminheader.php"; 
 ?>
-<?php
-    date_default_timezone_set('Europe/Tirane');
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <section class="header">
-        <nav>
-            <a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
-            <div class="nav-list" id="nav-list">
-                <i class="fas fa-window-close" onclick="hideM()"></i>
-                <ul>
-                    <li><a href="index.php">home<a></li>
-                    <li><a href="aboutus.php">about us<a></li>
-                    <li class="dropdown"><div class="dropbtn">create content</div>
-                        <div class="dropdown-content">
-                            <a href="mob.php">Add page</a>
-                            <a href="app.php">Add post</a>
-                            <a href="gd.php">create project</a>
-                        </div>
-                    </li>
-                    <li><a href="dashboard.php">dashboard</a></li>
-                    <li><a href="logout.inc.php">LOG OUT</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>
-        </nav>
-    </section>
 
     <section>
         <div class="main-wrapper">
             <div class="dashboard-overview">
                 <div class="mini-header"><h3>Website Overview</h3></div>
                 <div class="boxes">
-                    <a href=""><div class="info-box">
-                        <i class="fas fa-user"> 203</i>
-                        <h2>Users</h2>
+                    <a href="views/menu-dashboard.php"><div class="info-box">
+                        <!--i class="fas fa-user"> 203</i-->
+                        <h2>Dashboard</h2>
                     </div></a>
-                    <a href=""><div class="info-box">
-                        <i class="fas fa-list-ul"> 7</i>
-                        <h2>Pages</h2>
+                    <a href="views/create-menu.php"><div class="info-box">
+                        <!--i class="fas fa-list-ul"> 7</i-->
+                        <h2>Create User</h2>
                     </div></a>
-                    <a href=""><div class="info-box">
-                        <i class="fas fa-pen"> 12</i>
+                    <a href="#"><div class="info-box">
+                        <!--i class="fas fa-pen"> 12</i-->
                         <h2>Posts</h2>
-                    </div></a>
-                    <a href=""><div class="info-box">
-                        <i class="fas fa-signal">12,455</i>
-                        <h2>Visits</h2>
                     </div></a>
                 </div>
 
@@ -233,5 +190,5 @@
 
 <!--footer-->
 <?php
-include_once "footer.php"; 
+  include_once "must/footer.php"; 
 ?>

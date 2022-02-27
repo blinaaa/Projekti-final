@@ -1,6 +1,6 @@
 <?php
 
-class LoginAdmin extends DbhAdmin{
+class LoginAdmin extends Dbh{
 
     public function getUser($username, $password){
 

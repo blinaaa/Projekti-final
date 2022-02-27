@@ -7,16 +7,16 @@
             <div class="container-text">
                 <h3>Useful Links</h3>
                 <ul>
-                    <a href="index.html">
+                    <a href="index.php">
                         <li>Home Page</li>
                     </a>
-                    <a href="aboutus.html">
+                    <a href="aboutus.php">
                         <li>About Us</li>
                     </a>
-                    <a href="joinus.html">
+                    <a href="joinus.php">
                         <li>Sign Up</li>
                     </a>
-                    <a href="login.html">
+                    <a href="login.php">
                         <li>Log In</li>
                     </a>
                 </ul>

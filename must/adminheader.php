@@ -1,9 +1,6 @@
 <?php
     session_start();
 ?>
-<?php   
-    date_default_timezone_set('Europe/Tirane');
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,26 +22,16 @@
             <div class="nav-list" id="nav-list">
                 <i class="fas fa-window-close" onclick="hideM()"></i>
                 <ul>
-                    <li><a href="index.php">home<a></li>
-                    <li><a href="aboutus.php">about us<a></li>
-                    <li class="dropdown"><div class="dropbtn">OUR SERVICES</div>
+                    <li><a href="views/create-menu.php">create user<a></li>
+                    <li class="dropdown"><div class="dropbtn">create content</div>
                         <div class="dropdown-content">
-                            <a href="web.php">Web Development</a>
-                            <a href="mob.php">Mobile Development</a>
-                            <a href="app.php">App Development</a>
-                            <a href="gd.php">Graphic Design</a>
+                            <a href="#">Add page</a>
+                            <a href="#">Add post</a>
+                            <a href="#">create project</a>
                         </div>
                     </li>
-                    <?php
-                    if(isset($_SESSION["usersID"])){
-                    echo "<li><a href='profile.php'>PROFILE</a></li>";
-                    echo "<li><a href='logout.inc.php'>LOG OUT</a></li>";
-                    }
-                    else{
-                    echo "<li><a href='login.php'>LOG IN<a></li>";
-                    echo "<li><a href='joinus.php'>JOIN US<a></li>";
-                    }
-                    ?>
+                    <li><a href="dashboard.php">MyAdmin</a></li>
+                    <li><a href="logout.inc.php">LOG OUT</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>
