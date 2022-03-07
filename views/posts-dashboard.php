@@ -1,5 +1,5 @@
 <?php
-    require_once "../classes/MenuController.php";
+    require_once "../classes/PostController.php";
     
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crud</title>
+    <title></title>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -25,7 +25,7 @@
                     <li class="dropdown"><div class="dropbtn">create content</div>
                         <div class="dropdown-content">
                             <a href="#">Add page</a>
-                            <a href="posts-dashboard.php">Add post</a>
+                            <a href="posts-dashboard">Add post</a>
                             <a href="#">create project</a>
                         </div>
                     </li>
@@ -36,36 +36,33 @@
             <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>
         </nav>
     </section>
-<div>
-    <table class="content-table">
-        <thead>
-            <tr>
-              <th>Freelancer image</th>
-              <th>Freelancer name</th>
-              <th>Freelancer wage</th>
-              <th></th>
-              <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $m=new MenuController;
-            $allMenu=$m->readData();
-            foreach($allMenu as $menu):
-            ?>
-            <tr>
-                <td><?php echo $menu['freelancersImage'];?></td>
-                <td><?php echo $menu['freelancersName'];?></td>
-                <td><?php echo $menu['freelancersWage'];?></td>
-                <td ><a href="edit-menu.php?id=<?php echo $menu['freelancersID'];?>">EDIT</a></td>
-                <td ><a href="delete-menu.php?id=<?php echo $menu['freelancersID'];?>">DELETE</a></td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="dashboard">
-    <a href="create-menu.php"><button >CreateUser</button></a>
+<div><div>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                    <th>Post Title</th>
+                    <th>Post Content</th>
+                    <th></th>
+                    <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <?php
+                    $p=new PostController;
+                    $allPosts=$p->readData();
+                    foreach($allPosts as $post):
+                    ?>
+                    <tr>
+                        <td><?php echo $post['postsTitle'];?></td>
+                        <td><?php echo $post['postsContent'];?></td>
+                        <td ><a href="edit-post.php?id=<?php echo $post['postsID'];?>">EDIT</a></td>
+                        <td ><a href="delete-post.php?id=<?php echo $post['postsID'];?>"DELETE</a></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <div class="dashboard">
+                <a href="create-post.php"><button >CreateNewPost</button></a>
             </div>
-</div>
-</body>
-</html>
+    </div>

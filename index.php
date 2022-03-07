@@ -1,6 +1,7 @@
 <?php
 
 include_once "must/header.php";
+require_once "classes/PostController.php";
 
 ?>
 
@@ -53,27 +54,17 @@ include_once "must/header.php";
         <h1>Services We Offer</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, temporibus!</p>
         <div class="row">
-            <div class="services-col">
-                <a href="#">
-                    <h3>Our newest Graphic Designers</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eaque id, veniam quidem a officiis
-                    accusamus. Nemo provident pariatur placeat!</p>
-            </div>
-            <div class="services-col">
-                <a href="#">
-                    <h3>Our newest Mobile Developers</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eaque id, veniam quidem a officiis
-                    accusamus. Nemo provident pariatur placeat!</p>
-            </div>
-            <div class="services-col">
-                <a href="#">
-                    <h3>Our newest Web Developers</h3>
-                </a>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eaque id, veniam quidem a officiis
-                    accusamus. Nemo provident pariatur placeat!</p>
-            </div>
+            <?php
+            $freelancers= new PostController;
+            $all=$freelancers->readData();
+            for($i=0;$i<count($all);$i++){
+                echo '<div class="services-col">
+                    <a href="freelancers.php"><h3>'.$all[$i]['postsTitle'].'</h3></a>
+                        <p>$'.$all[$i]['postsContent'].'</p>
+                </div>';
+            }
+            ?>
+        
         </div>
     </section>
     <section class="work-companies">

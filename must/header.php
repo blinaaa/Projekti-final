@@ -21,7 +21,7 @@
 <body>
     <section class="header">
         <nav>
-            <a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
+            <a href="../index.php"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
             <div class="nav-list" id="nav-list">
                 <i class="fas fa-window-close" onclick="hideM()"></i>
                 <ul>

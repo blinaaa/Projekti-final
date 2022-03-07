@@ -1,5 +1,5 @@
 <?php
-    require_once "../classes/MenuController.php";
+    require_once "../classes/CompanyPostController.php";
     
 ?>
 <!DOCTYPE html>
@@ -40,32 +40,32 @@
     <table class="content-table">
         <thead>
             <tr>
-              <th>Freelancer image</th>
-              <th>Freelancer name</th>
-              <th>Freelancer wage</th>
+              <th>Company image</th>
+              <th>Company name</th>
+              <th>Company content</th>
               <th></th>
               <th></th>
             </tr>
         </thead>
         <tbody>
-            <?php
-            $m=new MenuController;
-            $allMenu=$m->readData();
-            foreach($allMenu as $menu):
-            ?>
-            <tr>
-                <td><?php echo $menu['freelancersImage'];?></td>
-                <td><?php echo $menu['freelancersName'];?></td>
-                <td><?php echo $menu['freelancersWage'];?></td>
-                <td ><a href="edit-menu.php?id=<?php echo $menu['freelancersID'];?>">EDIT</a></td>
-                <td ><a href="delete-menu.php?id=<?php echo $menu['freelancersID'];?>">DELETE</a></td>
-            </tr>
+             <?php
+                $p=new CompanyPostController;
+                $allPosts=$p->readData();
+                foreach($allPosts as $post):
+                ?>
+                <tr>
+                    <td><?php echo $post['companyImage'];?></td>
+                    <td><?php echo $post['companyName'];?></td>
+                    <td><?php echo $post['companyContent'];?></td>
+                    <td ><a href="edit-companypost.php?id=<?php echo $post['companyID'];?>">EDIT</a></td>
+                    <td ><a href="delete-post.php?id=<?php echo $post['companyID'];?>">DELETE</a></td>
+                </tr>
             <?php endforeach; ?>
         </tbody>
-    </table>
-    <div class="dashboard">
-    <a href="create-menu.php"><button >CreateUser</button></a>
+            </table>
+            <div class="dashboard">
+                <a href="create-companypost.php"><button >CreateNewPost</button></a>
             </div>
-</div>
+    </div>
 </body>
 </html>

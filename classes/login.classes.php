@@ -50,14 +50,6 @@ class Login extends Dbh{
             $_SESSION["usersUid"]=$user[0]["usersUid"];
 
             $stmt=null;
-    
-            function isAdmin(){
-                if (isset($_SESSION['usersID']) && $_SESSION['usersID']['usersUid'] == 'admin' ) {
-                    return true;
-                }else{
-                    return false;
-                }
-            }
             
         }
 

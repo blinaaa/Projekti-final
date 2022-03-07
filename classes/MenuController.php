@@ -55,8 +55,4 @@ class MenuController extends Dbh{
         $stmt->execute();
         return header("location: menu-dashboard.php?DeleteDone");
     }
-
-
-    
-
 }

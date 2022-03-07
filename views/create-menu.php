@@ -9,9 +9,6 @@ if(isset($_POST["submit"])){
     $menu->insert($_POST);
 }
 ?>
-<?php
-    session_start();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +60,7 @@ if(isset($_POST["submit"])){
         <input type="number" name="wage" >
         </div>
         <div class="input">
-          <input type="submit" name="submitL" value="save">
+          <input type="submit" name="submit" value="save">
       </div>
 </form>
 </div>

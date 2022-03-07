@@ -28,7 +28,7 @@ nav{
 }
 nav img{
     width: 100px;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 .nav-list{
     flex: 1;

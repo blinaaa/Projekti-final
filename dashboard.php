@@ -12,11 +12,11 @@
                         <!--i class="fas fa-user"> 203</i-->
                         <h2>Dashboard</h2>
                     </div></a>
-                    <a href="views/create-menu.php"><div class="info-box">
+                    <a href="views/companypost-dashboard.php"><div class="info-box">
                         <!--i class="fas fa-list-ul"> 7</i-->
-                        <h2>Create User</h2>
+                        <h2>Company</h2>
                     </div></a>
-                    <a href="#"><div class="info-box">
+                    <a href="views/posts-dashboard.php"><div class="info-box">
                         <!--i class="fas fa-pen"> 12</i-->
                         <h2>Posts</h2>
                     </div></a>
