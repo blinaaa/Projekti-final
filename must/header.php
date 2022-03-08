@@ -1,8 +1,7 @@
 <?php
     session_start();
-?>
-<?php   
     date_default_timezone_set('Europe/Tirane');
+    include 'classes/dbh.classes.php';
 ?>
 
 <!DOCTYPE html>

@@ -1,16 +1,13 @@
 <?php
-require_once "../classes/PostController.php";
+require_once "../classes/StaffController.php";
 
 
 
-$menu=new PostController;
+$menu=new StaffController;
 
 if(isset($_POST["submit"])){
     $menu->insert($_POST);
 }
-?>
-<?php
-    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -51,12 +48,16 @@ if(isset($_POST["submit"])){
 <div>
     <form method="POST" class="login-form">
         <div class="input">
-        <span>Title:</span>
-        <input type="text" name="title">
+        <span>Image:</span>
+        <input type="file" name="image">
+        </div>
+        <div class="input">
+        <span>Name:</span>
+        <input type="name" name="name">
         </div>
         <div class="input">
         <span>Content:</span>
-        <input type="text" name="content">
+        <input type="textarea" name="content" >
         </div>
         <div class="input">
           <input type="submit" name="submit" value="save">

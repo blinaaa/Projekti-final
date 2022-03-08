@@ -316,7 +316,7 @@ text-align: left;
 align-items: center;
 }
 .work-col img{
-    width: 100%;
+    width: 300px;
     border-radius: 10px;
 }
 .work-col p{
@@ -467,8 +467,8 @@ align-items: center;
         margin-top: 100px;
     }
     .work-col img{
-        width: 40%;
-        border-radius: 10px;
+      width: 100%;
+      border-radius: 20px;
 
     }
 }
@@ -510,7 +510,7 @@ align-items: center;
     list-style-type: none;
 }
   
-  #fig2 {
+content  :first-child {
     margin-top: 40px;
     display: flex;
     justify-content: right;
@@ -956,3 +956,4 @@ small {
   .dashboard {
       justify-content: center;
   }
+

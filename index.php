@@ -1,7 +1,8 @@
 <?php
 
 include_once "must/header.php";
-require_once "classes/PostController.php";
+include_once "classes/PostController.php";
+include_once "classes/CompanyPostController.php";
 
 ?>
 
@@ -60,7 +61,7 @@ require_once "classes/PostController.php";
             for($i=0;$i<count($all);$i++){
                 echo '<div class="services-col">
                     <a href="freelancers.php"><h3>'.$all[$i]['postsTitle'].'</h3></a>
-                        <p>$'.$all[$i]['postsContent'].'</p>
+                        <p>'.$all[$i]['postsContent'].'</p>
                 </div>';
             }
             ?>
@@ -71,67 +72,22 @@ require_once "classes/PostController.php";
         <h1>Companies we work with</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, tempore.</p>
         <div class="work">
-            <div class="work-col">
-                <img src="images/companylogo1.jpg" alt="">
-                <h3>Robert Half International</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum.</p>
-            </div>
-            <div class="work-col">
-                <img src="images/companylogo2.jpg" alt="">
-                <a href="#">
-                    <h3>Microsoft</h3>
+        <?php
+            $freelancers= new CompanyPostController;
+            $all=$freelancers->readData();
+            for($i=0;$i<count($all);$i++){
+                echo '<div class="work-col">
+                <img src="' .$all[$i]['companyImage'].'" id="logos">
+                <a href="index.php">
+                     <h3>'.$all[$i]['companyName'].'</h3>
                 </a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, quasi?</p>
-            </div>
-            <div class="work-col">
-                <img src="images/companylogo3.jpg" alt="">
-                <a href="#">
-                    <h3>Amazon</h3>
-                </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, et.</p>
-            </div>
-            <div class="work-col">
-                <img src="images/google.png" alt="">
-                <a href="#">
-                    <h3>Google</h3>
-                </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, incidunt?</p>
-            </div>
+                <p>'.$all[$i]['companyContent'].'</p>
+                  
+                </div>';
+            }
+            ?>
         </div>
     </section>
-    <!--comment section-->
-    <section class="comments">
-        <h1>What our users think</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, sunt!</p>
-        <div class="row">
-            <div class="comments-col">
-                <img src="images/leart.png" alt="">
-                <div class="comments-text">
-                    <p name='message'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit ratione maiore?</p>
-                    <h4>Leart Bytyqi</h4>
-                </div>
-            </div>
-            <div class="comments-col">
-                <img src="images/blina.png" alt="">
-                <div class="comments-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est libero inventore iusto.</p>
-                    <h4>Blina Avdullahu</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--section class="commentbox">
-    <?php
-     echo "<form>
-            <input type='hidden' name='usersID' value='Anonymous'>
-            <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-            <textarea name='message'></textarea><br>
-            <button name='submit' type='submit'>Comment</button>
-        </form>";
-    ?>
-    </section-->
-    
-    
 
     <!--footer-->
     <?php

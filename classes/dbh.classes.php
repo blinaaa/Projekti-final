@@ -5,7 +5,7 @@ class Dbh{
         try{
             $username="root";
             $password="";
-            $dhb=new PDO('mysql:host=localhost;dbname=projekti',$username,$password);
+            $dhb=new PDO('mysql:host=localhost;dbname=projekti',$username, $password);
             return $dhb;
 
         }catch(PDOException $e){
@@ -14,5 +14,6 @@ class Dbh{
         }
 
     }
+
 
 }
