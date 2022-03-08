@@ -1,5 +1,6 @@
 <?php
 require_once "../classes/StaffController.php";
+include_once "../must/viewheader.php ";
 
 if(isset($_GET['id'])){
     $id =$_GET['id'];

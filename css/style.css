@@ -857,55 +857,17 @@ small {
     border-radius: 10px;
     margin-bottom: 5%;
     margin: 0 50px;
-    width: 300px;
-    height: 200px;
-    padding: 58px;
+    width: 200px;
+    height: 150px;
     text-align: center;
+    padding-top: 50px;
     color: var(--darkblue);
     background-color: var(--lightblue);
 }
 .info-box:hover{
     color: darkblue;
 }
-.tabels{
-    margin-top: 10%;
-    
-    display: flex;
-    justify-content: space-between;
-    padding: 0 200px;
-}
-.tabels h3{
-    padding-bottom: 5px;
-    font-size: larger;
-}
 
-.table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    
-  }
-  
-  .table  td, .table  th {
-    border: 1px solid #ddd;
-    padding: 10px 20px;
-  }
-  .table-project td, .table-project th{
-    border: 1px solid #ddd;
-    padding: 10px 26px;
-
-  }
-  .table  tr:nth-child(even){background-color: #f2f2f2;}
-  
-  .table  tr:hover {background-color: #ddd;}
-  
-  .table  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: var(--green);
-    color: black;
-  }
   .content-table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -956,4 +918,39 @@ small {
   .dashboard {
       justify-content: center;
   }
+.UsersTabel{
+    margin-top: 100px;
+}
+.mini2{
+    background-color: var(--green);
+    margin-bottom: 60px;
 
+}
+.tabelD{
+    width: 90%;
+    margin: 0 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    
+}
+  
+  .tabelD  td, .tabelD  th {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  .tabelD td, .tabelD th{
+    border: 1px solid #ddd;
+    padding: 10px 26px;
+
+  }
+  .tabelD  tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .tabelD  tr:hover {background-color: #ddd;}
+  
+  .tabelD  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--lightblue);
+    color: black;
+  }
